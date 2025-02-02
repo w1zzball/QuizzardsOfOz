@@ -1,0 +1,35 @@
+#easy {
+    background-color: #AEC6CF; /* pastel blue */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#easy:hover {
+    background-color: #8FAEBF; /* darker pastel blue */
+}
+
+#medium {
+    background-color: #FFB347; /* pastel orange */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#medium:hover {
+    background-color: #E69A2D; /* darker pastel orange */
+}
+
+#hard {
+    background-color: #FF6961; /* pastel red */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#hard:hover {
+    background-color: #E55A52; /* darker pastel red */
+}
