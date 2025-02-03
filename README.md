@@ -2,7 +2,7 @@
 
 ## About
 
-The Quizzards of Oz team presents a multiple choice quiz game which leverages https://the-trivia-api.com/ to generate a variable number of questions, allowing for customisation based on difficulty, region and category.
+The Quizzards of Oz team presents a multiple choice quiz game which leverages https://the-trivia-api.com/ to generate a variable number of questions, allowing for customisation based on difficulty, region and category. The project employs javascript along with bootstrap styling to give the page an engaging look with immediate user feedback.
 
 ## Features
 
@@ -29,6 +29,11 @@ The Quizzards of Oz team presents a multiple choice quiz game which leverages ht
 
 ### Automated Testing
 - [Add details about any automated tests]
+
+### To implement
+- Two player mode
+- Timer
+- Method of sharing specific quiz
 
 ## Credits
 
