@@ -18,7 +18,7 @@ The Quizzards of Oz team presents a multiple choice quiz game which leverages ht
 - HTML5
 - CSS3
 - JavaScript
-- The Trivia API
+- The Trivia API (provides hundreds of trivia questions formatted into JSON)
 - Bootstrap framework for interface elements
 - Balsamiq for wireframing
 - miroboard for brainstorming
@@ -39,12 +39,13 @@ The Quizzards of Oz team presents a multiple choice quiz game which leverages ht
 - Method of sharing specific quiz
 - Toggleable light/dark mode
 - Accessibility options e.g. high contrast text
+- Picture questions
 
 ## Credits
 
 - Questions provided by [The Trivia API](https://the-trivia-api.com/)
-- Phil 
-- Oliver
-- Hannah
-- Fouzia
-- Aaron
+- Phil - [PeaJaySee](https://github.com/PeaJaySee)
+- Oliver - [Olbotron](https://github.com/Olbotron)
+- Hannah - [hmoon96](https://github.com/hmoon96)
+- Fouzia - [fouziaa62](https://github.com/fouziaa62)
+- Aaron - [w1zzball](https://github.com/w1zzball)
