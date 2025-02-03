@@ -19,6 +19,9 @@ The Quizzards of Oz team presents a multiple choice quiz game which leverages ht
 - CSS3
 - JavaScript
 - The Trivia API
+- Bootstrap framework for interface elements
+- Balsamiq for wireframing
+- miroboard for brainstorming
 
 ## Testing
 
@@ -28,12 +31,14 @@ The Quizzards of Oz team presents a multiple choice quiz game which leverages ht
 - Feature functionality tests
 
 ### Automated Testing
-- [Add details about any automated tests]
+- W3C css and html validator
 
 ### To implement
 - Two player mode
 - Timer
 - Method of sharing specific quiz
+- Toggleable light/dark mode
+- Accessibility options e.g. high contrast text
 
 ## Credits
 
