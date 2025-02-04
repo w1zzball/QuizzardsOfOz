@@ -27,9 +27,9 @@ p {
 }
 
 .correct{
-    color: green;
+    background-color: green !important;
 }
 
 .incorrect{
-    color: red;
+    background-color: red !important;
 }

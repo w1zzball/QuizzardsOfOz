@@ -56,13 +56,15 @@ function check(element, isCorrect) {
     } else {
         console.log('Incorrect answer!');
     }
-    [...element.parentElement.children].forEach(child => {
-        // child.style.backgroundColor = isCorrect ? 'green' : 'red';
-        child.style.backgroundColor = isCorrect ? child.classList.add('correct') : child.classList.add('incorrect');
-        child.disabled = true;
+    
+    // Only select the answer buttons
+    const answerButtons = document.querySelectorAll('#questions button');
+    answerButtons.forEach(button => {
+        const isCorrectButton = button.innerText === questions[currentQuestion].correctAnswer;
+        button.classList.add(isCorrectButton ? 'correct' : 'incorrect');
+        button.disabled = true;
     });
-    // const nextButton = document.createElement('button');
-    // nextButton.textContent = 'Next';
+
     nextButton = document.getElementById('next-button');
     nextButton.onclick = () => {
         currentQuestion++;
@@ -71,11 +73,10 @@ function check(element, isCorrect) {
         } else {
             questionArea.innerHTML = `<p>Quiz completed! Your score is ${score}/${questions.length}.</p>`;
         }
-        [...element.parentElement.children].forEach(child => {
-            child.style.backgroundColor = '';
-            child.disabled = false;
-            child.classList.remove('correct');
-            child.classList.remove('incorrect');
+        answerButtons.forEach(button => {
+            button.disabled = false;
+            button.classList.remove('correct');
+            button.classList.remove('incorrect');
         });
     };
     scoreElement.textContent = `Score: ${score}`;
