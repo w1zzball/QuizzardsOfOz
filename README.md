@@ -4,6 +4,10 @@
 
 The Quizzards of Oz team presents a multiple choice quiz game which leverages https://the-trivia-api.com/ to generate a variable number of questions, allowing for customisation based on difficulty, region and category. The project employs javascript along with bootstrap styling to give the page an engaging look with immediate user feedback.
 
+## Developement
+
+Initial wireframing done using balsamiq employing a mobile-first design approach
+
 ## Features
 
 - Multiple choice questions from various categories
@@ -18,7 +22,7 @@ The Quizzards of Oz team presents a multiple choice quiz game which leverages ht
 - HTML5
 - CSS3
 - JavaScript
-- The Trivia API (provides hundreds of trivia questions formatted into JSON)
+- The Trivia API for questions
 - Bootstrap framework for interface elements
 - Balsamiq for wireframing
 - miroboard for brainstorming
