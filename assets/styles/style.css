@@ -34,9 +34,42 @@ p {
     background-color: red !important;
 }
 
+header {
+    margin-bottom: 20px; /* Add space below the header */
+}
+
 header img {
     width: 100%;
     display: block;
     margin: 0 auto;
     min-height: 50vh;
+}
+
+#questions {
+    margin-bottom: 20px;
+}
+
+#question-text {
+    margin-bottom: 20px; 
+}
+
+button.btn-primary {
+    margin: 10px; 
+}
+
+footer {
+    padding: 20px 0;
+    background-color: var(--color-accent); 
+    color: white;
+}
+
+footer a {
+    color: var(--color-primary); 
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-secondary);
 }
