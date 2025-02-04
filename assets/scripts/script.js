@@ -91,7 +91,7 @@ async function initQuiz() {
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 d-flex flex-column align-items-center">
                     <div class="text-center mb-4">
-                        <h3 id="question-number">Question 1</h3>
+                        <h3 id="question-number" class="text-center">Question 1</h3>
                         <p id="question-text" class="mt-2">${questions[0].question.text}</p>
                     </div>
                     <div class="row g-2 w-100">
