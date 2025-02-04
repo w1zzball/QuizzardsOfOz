@@ -1,6 +1,7 @@
 const questionArea = document.getElementById('questions');
 const questionNumberElement = document.getElementById('question-number');
 const questionTextElement = document.getElementById('question-text');
+const scoreElement = document.getElementById('score');
 let score = 0;
 let currentQuestion = 0;
 let questions = [];
@@ -50,7 +51,7 @@ function check(element, isCorrect) {
         console.log('Incorrect answer!');
     }
     [...element.parentElement.children].forEach(child => {
-        child.style.backgroundColor = isCorrect ? 'green' : 'red';
+        // child.style.backgroundColor = isCorrect ? 'green' : 'red';
         child.style.backgroundColor = isCorrect ? child.classList.add('correct') : child.classList.add('incorrect');
         child.disabled = true;
     });
@@ -71,6 +72,7 @@ function check(element, isCorrect) {
             child.classList.remove('incorrect');
         });
     };
+    scoreElement.textContent = `Score: ${score}`;
 }
 
 async function initQuiz() {
