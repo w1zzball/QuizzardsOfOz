@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /* Color Palette */
 :root {
     --color-primary: #4289C1;
     --color-secondary: #7EBEFA;
     --color-tertiary: #D6F4FF;
     --color-accent: #E39E21;
+}
+
+/* General Styles */
+h1, h2, h3 {
+    font-family: Henny Penny, cursive;
+    align-items: center;
+}
+
+p {
+    font-family: Nunito, sans-serif;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    font-family: Henny Penny, cursive;
 }
 
