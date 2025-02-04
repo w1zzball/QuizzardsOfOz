@@ -7,7 +7,9 @@ The Quizzards of Oz team presents a multiple choice quiz game which leverages ht
 ## Developement
 
 Initial wireframing done using balsamiq employing a mobile-first design approach
-
+![Mobile wireframe](./refrences/Quizzards%20Mobile.png)
+![Tablet wireframe](./refrences/Quizzards%20Tab.png)
+![Laptop wireframe](./refrences/quizzards%20laptop.png)
 ## Features
 
 - Multiple choice questions from various categories
