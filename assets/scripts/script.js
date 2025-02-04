@@ -2,6 +2,7 @@ const questionArea = document.getElementById('questions');
 const questionNumberElement = document.getElementById('question-number');
 const questionTextElement = document.getElementById('question-text');
 const scoreElement = document.getElementById('score');
+const resetButton = document.getElementById('reset-button');
 let score = 0;
 let currentQuestion = 0;
 let questions = [];
@@ -15,6 +16,13 @@ async function getQuestions(amount, catagories, difficulty) {
         console.error('Error:', error);//log error
     }
 }
+
+resetButton.onclick = ()=>{//add event listener to reset button
+    score = 0;
+    currentQuestion = 0;
+    initQuiz();
+};
+
 
 function displayQuestion(question) {
     if (!question) {//if question exists
@@ -31,7 +39,7 @@ function displayQuestion(question) {
         questionTextElement.textContent = questionText;//display the question text
         choices.forEach((choice, index)=>{
             console.log(`button-${index+1}`);
-            document.getElementById(`button-${index+1}`).setAttribute("onclick", `${choice === correctAnswer ? 'check(this, true)' : 'check(this, false)'}`);
+            document.getElementById(`button-${index+1}`).onclick = function() {choice === correctAnswer ? check(this, true) : check(this, false)};
             document.getElementById(`button-${index+1}`).innerText = choice;
         })
     }
@@ -40,8 +48,6 @@ function displayQuestion(question) {
         console.log('Invalid question type');
         text = `<p> invalid q</p>\n`;
     }
-    // questionArea.innerHTML = text;
-
 }
 function check(element, isCorrect) {
     if (isCorrect) {
@@ -87,9 +93,7 @@ async function initQuiz() {
 
 initQuiz();
 
-function reset() {
-    score = 0;
-    currentQuestion = 0;
-    initQuiz();
-}
+
+
+
 
