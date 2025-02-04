@@ -19,6 +19,7 @@ async function getQuestions(amount, catagories, difficulty) {
 
 resetButton.onclick = ()=>{//add event listener to reset button
     score = 0;
+    scoreElement.textContent = `Score: ${score}`;
     currentQuestion = 0;
     initQuiz();
 };
@@ -85,6 +86,24 @@ function check(element, isCorrect) {
 async function initQuiz() {
     questions = await getQuestions(10, "general_knowledge", "easy");
     if (questions) {
+        questionArea.innerHTML = 
+        `<div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 d-flex flex-column align-items-center">
+                    <div class="text-center mb-4">
+                        <h3 id="question-number">Question 1</h3>
+                        <p id="question-text" class="mt-2">${questions[0].question.text}</p>
+                    </div>
+                    <div class="row g-2 w-100">
+                        <div class="col-6"><button id="button-1" class="btn btn-primary w-100"></button></div>
+                        <div class="col-6"><button id="button-2" class="btn btn-primary w-100"></button></div>
+                        <div class="col-6"><button id="button-3" class="btn btn-primary w-100"></button></div>
+                        <div class="col-6"><button id="button-4" class="btn btn-primary w-100"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+        
         displayQuestion(questions[currentQuestion]);
     }
     else {
