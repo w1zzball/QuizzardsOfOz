@@ -10,7 +10,7 @@
 
 /* General Styles */
 h1, h2, h3, h4 {
-    font-family: Henny Penny, cursive
+    font-family: Henny Penny, cursive;
 }
 
 p {
@@ -43,7 +43,7 @@ p {
 /*Header*/
 
 header {
-    background: no-repeat center cover;
+    background: no-repeat center/cover;
     min-height: 35vh;
     max-height: 90vh;
     object-fit: contain;
