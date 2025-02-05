@@ -16,63 +16,64 @@
             <img src="./assets/images/wiz-hero.webp" alt="Quizzards Of Oz Logo" class="img-fluid">
         </div>
     </header>
-    
+
     <section id="selection">
         <h3 hidden> selection sections </h3>
-        <div id="dropdowns" class="row text-center justify-content-center">
-            <div class="col-4">
-                <div id="difficulties" class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="difficultyDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Select Difficulty
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
-                        <li><a class="dropdown-item" href="#">Easy</a></li>
-                        <li><a class="dropdown-item" href="#">Medium</a></li>
-                        <li><a class="dropdown-item" href="#">Hard</a></li>
-                    </ul>
+        <div class="row">
+            <div id="dropdowns" class="row text-center justify-content-center gy-3">
+                <div class="col-12 col-md-4">
+                    <div id="difficulties" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="difficultyDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Difficulty
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
+                            <li><a class="dropdown-item" href="#">Easy</a></li>
+                            <li><a class="dropdown-item" href="#">Medium</a></li>
+                            <li><a class="dropdown-item" href="#">Hard</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div id="questionCount" class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="questionCountDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Number of Questions
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="questionCountDropdown">
-                        <li><a class="dropdown-item" href="#">5</a></li>
-                        <li><a class="dropdown-item" href="#">10</a></li>
-                        <li><a class="dropdown-item" href="#">15</a></li>
-                        <li><a class="dropdown-item" href="#">20</a></li>
-                    </ul>
+                <div class="col-12 col-md-4">
+                    <div id="questionCount" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="questionCountDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Number of Questions
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="questionCountDropdown">
+                            <li><a class="dropdown-item" href="#">5</a></li>
+                            <li><a class="dropdown-item" href="#">10</a></li>
+                            <li><a class="dropdown-item" href="#">15</a></li>
+                            <li><a class="dropdown-item" href="#">20</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div id="categories" class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Select Category
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                        <li class="dropdown-item">
-                            <input type="checkbox" id="general-knowledge" name="category" value="General Knowledge">
-                            <label for="general-knowledge">General Knowledge</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input type="checkbox" id="science" name="category" value="Science">
-                            <label for="science">Science</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input type="checkbox" id="history" name="category" value="History">
-                            <label for="history">History</label>
-                        </li>
-                        <li class="dropdown-item">
-                            <input type="checkbox" id="sports" name="category" value="Sports">
-                            <label for="sports">Sports</label>
-                        </li>
-                    </ul>
+                <div class="col-12 col-md-4">
+                    <div id="categories" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Category
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                            <li class="dropdown-item">
+                                <input type="checkbox" id="general-knowledge" name="category" value="General Knowledge">
+                                <label for="general-knowledge">General Knowledge</label>
+                            </li>
+                            <li class="dropdown-item">
+                                <input type="checkbox" id="science" name="category" value="Science">
+                                <label for="science">Science</label>
+                            </li>
+                            <li class="dropdown-item">
+                                <input type="checkbox" id="history" name="category" value="History">
+                                <label for="history">History</label>
+                            </li>
+                            <li class="dropdown-item">
+                                <input type="checkbox" id="sports" name="category" value="Sports">
+                                <label for="sports">Sports</label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
         </div>
         <div class="row text-center justify-content-center my-3">
@@ -93,10 +94,14 @@
                         <div class="row justify-content-center">
                             <div class="col-md-8">
                                 <div class="row g-3">
-                                    <div class="col-6"><button id="button-1" class="btn btn-primary w-100"></button></div>
-                                    <div class="col-6"><button id="button-2" class="btn btn-primary w-100"></button></div>
-                                    <div class="col-6"><button id="button-3" class="btn btn-primary w-100"></button></div>
-                                    <div class="col-6"><button id="button-4" class="btn btn-primary w-100"></button></div>
+                                    <div class="col-6"><button id="button-1" class="btn btn-primary w-100"></button>
+                                    </div>
+                                    <div class="col-6"><button id="button-2" class="btn btn-primary w-100"></button>
+                                    </div>
+                                    <div class="col-6"><button id="button-3" class="btn btn-primary w-100"></button>
+                                    </div>
+                                    <div class="col-6"><button id="button-4" class="btn btn-primary w-100"></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +126,7 @@
     <footer>
         <div>
             <h4 class="text-center">Follow us on Social Media! <i class="fa-solid fa-wand-sparkles"></i> </h4>
-            <div id="socials">    
+            <div id="socials">
                 <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://bsky.app/" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
@@ -138,7 +143,9 @@
 
 
     <script src="https://kit.fontawesome.com/313fd8806c.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./assets/scripts/script.js"></script>
 </body>
 
