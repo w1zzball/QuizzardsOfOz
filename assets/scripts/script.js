@@ -3,9 +3,17 @@ const questionNumberElement = document.getElementById('question-number');
 const questionTextElement = document.getElementById('question-text');
 const scoreElement = document.getElementById('score');
 const resetButton = document.getElementById('reset-button');
+const startButton = document.getElementById('start-button');
+const gameSection = document.getElementById('game');
 let score = 0;
 let currentQuestion = 0;
 let questions = [];
+
+startButton.onclick = () => {
+    initQuiz();
+    startButton.classList.add('hidden');
+};
+
 async function getQuestions(amount, catagories, difficulty) {
     try {
         const response = await fetch(`https://the-trivia-api.com/v2/questions?limit=${amount}&categories=${catagories}&difficulties=${difficulty}`);//attempt to get data
@@ -21,8 +29,11 @@ resetButton.onclick = ()=>{//add event listener to reset button
     score = 0;
     scoreElement.textContent = `Score: ${score}`;
     currentQuestion = 0;
-    initQuiz();
+    startButton.classList.remove('hidden');
+    gameSection.classList.add('hidden');
 };
+
+
 
 
 function displayQuestion(question) {
@@ -105,13 +116,15 @@ async function initQuiz() {
         </div>`;
         
         displayQuestion(questions[currentQuestion]);
+        // .classList.remove('hidden');
+        gameSection.classList.remove('hidden');
     }
     else {
         console.error('No questions found');
     }
 }
 
-initQuiz();
+// initQuiz();
 
 
 
