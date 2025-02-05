@@ -9,7 +9,7 @@
 }
 
 /* General Styles */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: Henny Penny, cursive
 }
 
@@ -30,7 +30,6 @@ p {
 
 .btn1 {
     font-family: Henny Penny, cursive;
-    background-color: var(--color-accent);
 }
 
 .correct{
@@ -44,13 +43,21 @@ p {
 /*Header*/
 
 header {
-    /* background-image: url("../images/wiz-hero.webp"); */
     background: no-repeat center cover;
     min-height: 35vh;
     max-height: 90vh;
     object-fit: contain;
 }
 
+
+#hero{
+    display: flex;
+    max-height: 50vh;
+    min-width: 100vw;
+    object-fit: cover;
+}
+
+/* Question */
 #question-number{
     /* display: flex; */
     /* align-items: center; */
@@ -66,7 +73,7 @@ header {
 
 #score-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 1rem;
@@ -211,4 +218,18 @@ header {
     color: var(--color-tertiary);
     font-size: 1.2rem;
     margin: 0;
+
+/*     margin: 1rem auto;
+    max-width: 200px; */
+}
+
+/* Footer */
+
+#socials{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 1rem 0;
 }
