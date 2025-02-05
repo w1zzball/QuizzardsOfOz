@@ -9,7 +9,7 @@
 }
 
 /* General Styles */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: Henny Penny, cursive
 }
 
@@ -30,7 +30,6 @@ p {
 
 .btn1 {
     font-family: Henny Penny, cursive;
-    background-color: var(--color-accent);
 }
 
 .correct{
@@ -82,4 +81,15 @@ header {
     border-radius: 10px;
     margin: 1rem auto;
     max-width: 200px;
+}
+
+/* Footer */
+
+#socials{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 1rem 0;
 }
