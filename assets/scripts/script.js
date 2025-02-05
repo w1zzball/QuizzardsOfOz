@@ -15,6 +15,9 @@ let questions = [];
 const difficultyItems = document.querySelectorAll('#difficultyDropdown + .dropdown-menu .dropdown-item');
 const categoryCheckboxes = document.querySelectorAll('#categories input[type="checkbox"]');
 
+// Add to initial variables
+let questionCount = 10;
+
 // Add event listeners for difficulty selection
 difficultyItems.forEach(item => {
     item.addEventListener('click', (e) => {
@@ -37,6 +40,17 @@ categoryCheckboxes.forEach(checkbox => {
             `${selectedCategories.length} Selected` : 
             'Select Category';
         document.getElementById('categoryDropdown').textContent = buttonText;
+    });
+});
+
+// Add after other dropdown handlers
+const questionCountItems = document.querySelectorAll('#questionCountDropdown + .dropdown-menu .dropdown-item');
+
+// Add event listeners for question count selection
+questionCountItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        questionCount = parseInt(e.target.textContent);
+        document.getElementById('questionCountDropdown').textContent = `${questionCount} Questions`;
     });
 });
 
@@ -133,7 +147,7 @@ function check(element, isCorrect) {
 }
 
 async function initQuiz() {
-    questions = await getQuestions(10, categories, difficulty);
+    questions = await getQuestions(questionCount, categories, difficulty);
     if (questions) {
         // Reset the display of answer buttons
         document.querySelectorAll('#questions button').forEach(button => {
