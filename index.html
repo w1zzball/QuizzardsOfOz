@@ -11,21 +11,26 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div id="hero-container">
+            <img src="./assets/images/wiz-hero.webp" alt="Quizzards Of Oz Logo" class="img-fluid">
+        </div>
+    </header>
     <section id="selection">
         
         <div id="dropdowns" class="row text-center justify-content-center">
             <div class="col-6">
-                <div id="difficulies" class="dropdown"></div>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="difficultyDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Select Difficulty
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
-                    <li><a class="dropdown-item" href="#">Easy</a></li>
-                    <li><a class="dropdown-item" href="#">Medium</a></li>
-                    <li><a class="dropdown-item" href="#">Hard</a></li>
-                </ul>
+                <div id="difficulties" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="difficultyDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Difficulty
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
+                        <li><a class="dropdown-item" href="#">Easy</a></li>
+                        <li><a class="dropdown-item" href="#">Medium</a></li>
+                        <li><a class="dropdown-item" href="#">Hard</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-6">
                 <div id="categories" class="dropdown">
