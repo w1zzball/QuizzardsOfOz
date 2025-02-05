@@ -79,3 +79,26 @@ header {
 .hidden{
     display: none;
 }
+
+.btn-primary {
+    min-height: 50px;
+    margin: 5px 0;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#questions .row {
+    margin: 20px auto;
+}
+
+.question-text-container {
+    background-color: var(--color-primary);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.question-text-container p {
+    color: var(--color-tertiary);
+    font-size: 1.2rem;
+    margin: 0;
+}
