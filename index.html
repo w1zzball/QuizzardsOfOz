@@ -12,36 +12,54 @@
 
 <body>
     <header></header>
-    <div id="dropdowns" class="row text-center justify-content-center">
-        <div class="col-6">
-            <div class="dropdown"></div>
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="difficultyDropdown"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Select Difficulty
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
-                <li><a class="dropdown-item" href="#">Easy</a></li>
-                <li><a class="dropdown-item" href="#">Medium</a></li>
-                <li><a class="dropdown-item" href="#">Hard</a></li>
-            </ul>
-        </div>
-
-        <div class="col-6">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown"
+    <section id="selection">
+        
+        <div id="dropdowns" class="row text-center justify-content-center">
+            <div class="col-6">
+                <div id="difficulies" class="dropdown"></div>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="difficultyDropdown"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    Select Category
+                    Select Difficulty
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                    <li><a class="dropdown-item" href="#">General Knowledge</a></li>
-                    <li><a class="dropdown-item" href="#">Science</a></li>
-                    <li><a class="dropdown-item" href="#">History</a></li>
-                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
+                    <li><a class="dropdown-item" href="#">Easy</a></li>
+                    <li><a class="dropdown-item" href="#">Medium</a></li>
+                    <li><a class="dropdown-item" href="#">Hard</a></li>
                 </ul>
             </div>
+            <div class="col-6">
+                <div id="categories" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Category
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                        <li class="dropdown-item">
+                            <input type="checkbox" id="general-knowledge" name="category" value="General Knowledge">
+                            <label for="general-knowledge">General Knowledge</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input type="checkbox" id="science" name="category" value="Science">
+                            <label for="science">Science</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input type="checkbox" id="history" name="category" value="History">
+                            <label for="history">History</label>
+                        </li>
+                        <li class="dropdown-item">
+                            <input type="checkbox" id="sports" name="category" value="Sports">
+                            <label for="sports">Sports</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
+        <div class="row text-center justify-content-center my-3">
+            <div class="col-6">
+                <button id="start-button" class="btn btn-primary px-4 py-2">Start</button>
+            </div>
+        </div>
+    </section>
     <div class="row">
         <div class="col text-center">
             <div id="questions">
